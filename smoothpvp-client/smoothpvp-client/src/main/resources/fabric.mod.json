@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "smoothpvp-client",
+  "version": "${version}",
+  "name": "SmoothPVP Client",
+  "description": "A clean-UI, high-FPS, PVP-focused client experience mod. Fair-play only: no killaura, reach, or autoclickers.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/smoothpvp/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.smoothpvp.client.SmoothPvpClient"
+    ]
+  },
+  "mixins": [
+    "smoothpvp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "fabric-api": "*"
+  }
+}
